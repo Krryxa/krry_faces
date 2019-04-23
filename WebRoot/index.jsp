@@ -5,7 +5,7 @@
 	Object ermsg = request.getSession().getAttribute("error");
 	StringBuffer strBuff = new StringBuffer();
 	if(ermsg != null){
-		//清除作用域
+		// 清除作用域
 		request.getSession().removeAttribute("error");
 		strBuff.append("loading('"+ermsg+"',4)");
 	}
