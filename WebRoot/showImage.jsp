@@ -42,8 +42,8 @@
 		//人种
 		JSONObject ethnicity = attribute.getJSONObject("ethnicity");
 		String races = ethnicity.getString("value");
-		if(races.equals("Asian")) races = "亚洲人";
-		else if(races.equals("White")) races = "白人";
+		if(races.equals("ASIAN")) races = "亚洲人";
+		else if(races.equals("WHITE")) races = "白人";
 		else races = "黑人";
 		
 		//微笑程度

@@ -28,7 +28,7 @@ public class FaceTest {
 	
 	public static void main(String[] args) throws Exception{
 		
-        File file = new File("d://5.jpg");
+        File file = new File("/Users/krry/Desktop/psb (1).jpeg");
 		byte[] buff = getBytesFromFile(file);
 		String url = "https://api-cn.faceplusplus.com/facepp/v3/detect";
         HashMap<String, String> map = new HashMap<String, String>();
@@ -63,6 +63,7 @@ public class FaceTest {
                 //种族
                 JSONObject ethnicity = attribute.getJSONObject("ethnicity");
                 String races = ethnicity.getString("value");
+                System.out.println(races);
                 
                 //微笑程度
                 JSONObject smile = attribute.getJSONObject("smile");
