@@ -39,13 +39,13 @@
 <body>
    <!--action  提交的路径  method:post(打包传输) get(明文传输) enctype(采用二进制)-->
    <form action="show" method="post" enctype="multipart/form-data">
-   <div class="box">
+   	<div class="box">
        <div class="title">人脸特征识别系统 --krry</div>
 	   <input type="file" id="fileChoice" accept="image/jpeg,image/png" style="display:none" name="files"/>
 	   <a class="b_btn" href="javascript:void(0);" onclick="choice()">选择照片</a>
        <input type="button" value="提交解析" class="b_btn" id="but"/>
        <input type="submit" class="sub_btn" style="display:none;"/> 
-   </div>
+   	</div>
    </form>
    <div class="busbu"></div>
  	<script src="js/jquery-1.11.3.min.js"></script>
